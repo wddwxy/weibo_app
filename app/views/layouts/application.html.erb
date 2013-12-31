@@ -10,53 +10,13 @@
   <![endif]-->
 </head>
 <body>
-<header class="navbar navbar-default navbar-static-top">
-  <div class="container">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="home">微博</a>
-    </div>
-    <div class="navbar-collapse collapse">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="home">主页</a></li>
-        <li><a href="about">关于</a></li>
-        <li><a href="help">帮助</a></li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">登录</a></li>
-      </ul>
-    </div>
-  </div>
-</header>
-
-
-<!--
-    <DIV CLASS="NAVBAR NAVBAR_INVERSE NAVBAR_STATIC_TOP" ROLE="NAVIGATION">
-      <DIV CLASS="CONTAINER">
-        <DIV CLASS="NAVBAR_HEADER">
-          <BUTTON TYPE="BUTTON" CLASS="NAVBAR_TOGGLE" DATA_TOGGLE="COLLAPSE" DATA_TARGET=".NAVBAR_COLLAPSE">
-            <SPAN CLASS="SR_ONLY">TOGGLE NAVIGATION</SPAN>
-            <SPAN CLASS="ICON_BAR"></SPAN>
-            <SPAN CLASS="ICON_BAR"></SPAN>
-            <SPAN CLASS="ICON_BAR"></SPAN>
-          </BUTTON>
-          <A CLASS="NAVBAR_BRAND" HREF="HOME">微博</A>
-        </DIV>
-        <DIV CLASS="NAVBAR_COLLAPSE COLLAPSE">
-          <UL CLASS="NAV NAVBAR_NAV">
-            <LI CLASS="ACTIVE"><A HREF="HOME">主页</A></LI>
-            <LI><A HREF="ABOUT">关于</A></LI>
-          </UL>
-          <UL CLASS="NAV NAVBAR_NAV NAVBAR_RIGHT">
-            <LI><A HREF="HELP">帮助</A></LI>
-            <LI><A HREF="#">登录</A></LI>
-          </UL>
-        </DIV>
-      </DIV>
-    </DIV>
--->
+<%=render "layouts/header" %>
 
 <div class="container">
   <%= yield %>
 </div>
+
+<%=render "layouts/footer"%>
+
 </body>
 </html>
