@@ -1,0 +1,104 @@
+<% provide(:title, @user.name) %>
+<!--<h1>用户信息</h1>
+<p>昵称: <%=@user.name %></p>
+<p>邮件地址: <%=@user.email %></p>
+<%= icon @user %> 头像 <img ...> -->
+
+<div class="container">
+
+  <div class="row row-offcanvas row-offcanvas-right">
+    <div class="col-xs-12 col-sm-1">
+      </div>
+    <div class="col-xs-12 col-sm-7">
+      <p class="pull-right visible-xs">
+        <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Toggle nav</button>
+      </p>
+      <div class="jumbotron">
+        <h1>Hello, world!</h1>
+        <p>This is an example to show the potential of an offcanvas layout pattern in Bootstrap. Try some responsive-range viewport sizes to see it in action.</p>
+      </div>
+      <div class="row">
+        <div class="col-6 col-sm-6 col-lg-4">
+          <h2>Heading</h2>
+          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+          <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
+        </div><!--/span-->
+        <div class="col-6 col-sm-6 col-lg-4">
+          <h2>Heading</h2>
+          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+          <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
+        </div><!--/span-->
+        <div class="col-6 col-sm-6 col-lg-4">
+          <h2>Heading</h2>
+          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+          <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
+        </div><!--/span-->
+        <div class="col-6 col-sm-6 col-lg-4">
+          <h2>Heading</h2>
+          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+          <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
+        </div><!--/span-->
+        <div class="col-6 col-sm-6 col-lg-4">
+          <h2>Heading</h2>
+          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+          <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
+        </div><!--/span-->
+        <div class="col-6 col-sm-6 col-lg-4">
+          <h2>Heading</h2>
+          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+          <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
+        </div><!--/span-->
+      </div><!--/row-->
+    </div><!--/span-->
+
+    <div class="col-xs-12 col-sm-3 " id="info" >
+      <div class="row">
+        <p></p>
+      </div>
+      <div class="row">
+        <%= icon @user %>
+
+      </div>
+      <div class="row">
+          <h2><%=@user.name %></h2>
+          <p>邮件地址: <%=@user.email %></p>
+      </div>
+      <div class="row">
+        <h1></h1>
+      </div>
+      <div class="row">
+        <div class="col-3 col-sm-1 col-lg-4 ">
+          <p>关注</p>
+          </div>
+        <div class="col-3 col-sm-1 col-lg-4 ">
+          <p>微博</p>
+        </div>
+        <div class="col-3 col-sm-1 col-lg-4 ">
+          <p>粉丝</p>
+        </div>
+      </div>
+      <div class="row">
+        <h2></h2>
+      </div>
+      <div class="row">
+        <div class="col-3 col-sm-1 col-lg-4 ">
+          <p>关注</p>
+        </div>
+        <div class="col-3 col-sm-1 col-lg-4 ">
+          <p>微博</p>
+        </div>
+        <div class="col-3 col-sm-1 col-lg-4 ">
+          <p>粉丝</p>
+        </div>
+      </div>
+    </div>
+
+  </div><!--/row-->
+
+  <hr>
+
+  <footer>
+    <p>© Company 2013</p>
+  </footer>
+
+</div>
