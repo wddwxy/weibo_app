@@ -1,4 +1,4 @@
-<header class="navbar navbar-default navbar-static-top">
+<header class="navbar navbar-default navbar-static-top ">
   <div class="container">
     <div class="navbar-header">
       <a class="navbar-brand" href="/home">微博</a>
@@ -10,7 +10,24 @@
         <li><a href="/help">帮助</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">登录</a></li>
+      <% if signed_in? %>
+          <li><%= link_to "Users", '#' %></li>
+          <li id="fat-menu" class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              Account <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+              <li><%= link_to "Profile", current_user %></li>
+              <li><%= link_to "Settings", '#' %></li>
+              <li class="divider"></li>
+              <li>
+                <%= link_to "Sign out", signout_path, method: "delete" %>
+              </li>
+            </ul>
+          </li>
+      <% else %>
+            <li><a href="/signin">登录</a></li>
+      <% end %>
       </ul>
     </div>
   </div>

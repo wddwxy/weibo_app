@@ -1,19 +1,19 @@
 @import "bootstrap";
 
 
-.new_user {
+form {
   max-width: 330px;
   padding: 15px;
   margin: 0 auto;
 }
-.new_user .new_user-heading,
-.new_user .checkbox {
+form form-heading,
+form .checkbox {
   margin-bottom: 10px;
 }
-.new_user .checkbox {
+form .checkbox {
   font-weight: normal;
 }
-.new_user .form-control {
+form .form-control {
   position: relative;
   font-size: 16px;
   height: auto;
@@ -22,15 +22,15 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-.new_user .form-control:focus {
+form .form-control:focus {
   z-index: 2;
 }
-.new_user input[type="text"] {
+form input[type="text"] {
   margin-bottom: -1px;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
 }
-.new_user input[type="password"] {
+form input[type="password"] {
   margin-bottom: 10px;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
