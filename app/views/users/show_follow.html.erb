@@ -1,0 +1,33 @@
+<% provide(:title, @title) %>
+
+<div class="container">
+
+  <div class="row row-offcanvas row-offcanvas-right">
+    <div class="col-xs-12 col-sm-1">
+    </div>
+    <div class="col-xs-12 col-sm-7">
+      <% if @users.any? %>
+          <ul class="users">
+            <%= render @users %>
+          </ul>
+          <%= will_paginate %>
+      <% end %>
+
+
+    </div>
+    <!--/span-->
+    <div class="col-xs-12 col-sm-3  text-left" style="padding: 0">
+    <%= render 'shared/user_info' %>
+
+      <% if @users.any? %>
+          <div class="user_avatars">
+            <% @users.each do |user| %>
+                <%= link_to icon(user, size: 30), user %>
+            <% end %>
+          </div>
+      <% end %>
+    </div>
+  </div>
+  <!--/row-->
+
+</div>

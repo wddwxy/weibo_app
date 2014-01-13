@@ -5,7 +5,7 @@
 
   <div class="row row-offcanvas row-offcanvas-right">
     <div class="col-xs-12 col-sm-1">
-      </div>
+    </div>
     <div class="col-xs-12 col-sm-7">
       <% if @user.microposts.any? %>
           <div class="jumbotron">
@@ -14,14 +14,18 @@
           <ol class="microposts" style="padding-left: 0px;">
             <%= render @microposts %>
           </ol>
-          <%= will_paginate(@microposts,:class=>"fenye") %>
+          <%= will_paginate(@microposts, :class => "fenye") %>
       <% end %>
 
 
-    </div><!--/span-->
-
-    <%= render 'shared/user_info' %>
-
-  </div><!--/row-->
+    </div>
+    <!--/span-->
+    <div class="col-xs-12 col-sm-3  text-left" style="padding: 0">
+      <%= render 'shared/user_info' %>
+      <h1></h1>
+      <%= render 'follow_form' if signed_in? %>
+    </div>
+  </div>
+  <!--/row-->
 
 </div>

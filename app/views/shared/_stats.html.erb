@@ -1,0 +1,30 @@
+<% @user ||= current_user %>
+
+
+<div class="row">
+  <div class="col-3 col-sm-1 col-lg-4 ">
+    <h4>关注</h4>
+  </div>
+  <div class="col-3 col-sm-1 col-lg-4 ">
+    <h4>微博</h4>
+  </div>
+  <div class="col-3 col-sm-1 col-lg-4 ">
+    <h4>粉丝</h4>
+  </div>
+</div>
+<div class="row">
+  <h2></h2>
+</div>
+<div class="row">
+  <div class="col-3 col-sm-1 col-lg-4 ">
+    <a href="<%= following_user_path(@user) %>">
+    <h4 id="following"><%= @user.followed_users.count %></h4></a>
+  </div>
+  <div class="col-3 col-sm-1 col-lg-4 ">
+    <h4><%= current_user.microposts.count %></h4>
+  </div>
+  <div class="col-3 col-sm-1 col-lg-4 ">
+    <a href="<%= followers_user_path(@user) %>">
+    <h4 id="followers"><%= @user.followers.count %></h4></a>
+  </div>
+</div>
