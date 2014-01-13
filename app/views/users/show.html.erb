@@ -20,10 +20,12 @@
 
     </div>
     <!--/span-->
-    <div class="col-xs-12 col-sm-3  text-left" style="padding: 0">
+    <div class="col-xs-3 col-sm-3  text-left" style="padding: 0">
       <%= render 'shared/user_info' %>
-      <h1></h1>
-      <%= render 'follow_form' if signed_in? %>
+      <div class="col-xs-12 col-sm-12 " style="padding: 0">
+        <h1></h1>
+        <%= render 'follow_form' if signed_in? %>
+      </div>
     </div>
   </div>
   <!--/row-->

@@ -11,17 +11,17 @@
       </ul>
       <ul class="nav navbar-nav navbar-right">
       <% if signed_in? %>
-          <li><%= link_to "Users", users_path %></li>
+          <li><%= link_to "用户群", users_path %></li>
           <li id="fat-menu" class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-              Account <b class="caret"></b>
+              账户 <b class="caret"></b>
             </a>
             <ul class="dropdown-menu">
-              <li><%= link_to "Profile", current_user %></li>
-              <li><%= link_to "Settings", edit_user_path(current_user) %></li>
+              <li><%= link_to "个人主页", current_user %></li>
+              <li><%= link_to "设置", edit_user_path(current_user) %></li>
               <li class="divider"></li>
               <li>
-                <%= link_to "Sign out", signout_path, method: "delete" %>
+                <%= link_to "登出", signout_path, method: "delete" %>
               </li>
             </ul>
           </li>

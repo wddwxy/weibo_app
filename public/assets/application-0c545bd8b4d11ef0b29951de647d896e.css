@@ -5043,7 +5043,6 @@ td.visible-print {
   max-width: 330px;
   padding: 15px;
   margin: 0 auto; }
-.denglu form form-heading,
 .denglu form .checkbox {
   margin-bottom: 10px; }
 .denglu form .checkbox {
@@ -10117,7 +10116,6 @@ td.visible-print {
   max-width: 330px;
   padding: 15px;
   margin: 0 auto; }
-.denglu form form-heading,
 .denglu form .checkbox {
   margin-bottom: 10px; }
 .denglu form .checkbox {
@@ -10168,6 +10166,6 @@ td.visible-print {
 
 .weibo {
   border-radius: 6px;
-  background-color: #CCCCFF; }
+  background-color: #e6f1ff; }
   .weibo span {
     vertical-align: right; }

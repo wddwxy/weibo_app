@@ -1,10 +1,22 @@
 <% provide(:title, 'All users') %>
 <h1>全部用户</h1>
 
-<%= will_paginate(@users, :class=>"fenye") %>
+<div class="row row-offcanvas row-offcanvas-right">
+  <div class="col-xs-12 col-sm-1">
+  </div>
+  <div class="col-xs-12 col-sm-7 text-left">
+    <%= will_paginate(@users, :class => "fenye") %>
 
-<ul class="users">
-  <%= render @users %>
-</ul>
+    <ul class="users">
+      <%= render @users %>
+    </ul>
 
-<%= will_paginate(@users, :class=>"fenye") %>
+    <%= will_paginate(@users, :class => "fenye") %>
+  </div>
+  <!--/span-->
+  <div class="col-xs-12 col-sm-3  text-left" style="padding: 0">
+    <%= render 'shared/user_info' %>
+    <h1></h1>
+    <%= render 'follow_form' if signed_in? %>
+  </div>
+</div>
