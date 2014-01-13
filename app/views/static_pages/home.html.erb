@@ -1,5 +1,23 @@
 <% provide(:title, 'Home') %>
 
+
+<% if signed_in? %>
+    <div class="container">
+
+      <div class="row row-offcanvas row-offcanvas-right">
+        <div class="col-xs-12 col-sm-1">
+        </div>
+        <div class="col-xs-12 col-sm-7">
+          <%= render 'shared/micropost_form' %>
+          <%= render 'shared/feed' %>
+        </div>
+
+        <%= render 'shared/user_info' %>
+
+      </div>
+
+    </div>
+<% else %>
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
   <!-- Indicators -->
   <ol class="carousel-indicators">
@@ -41,4 +59,5 @@
   </div>
   <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
   <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
-</div><!-- /.carousel -->
+</div>
+<% end %>

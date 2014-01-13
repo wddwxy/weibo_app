@@ -1,0 +1,18 @@
+<div class="col-10 col-sm-13 col-lg-12 weibo ">
+
+  <h3 class="text-left"> <%= micropost.content %></h3>
+
+  <h5 class="text-right">
+  <span class="glyphicon glyphicon-time">
+    Posted <%= time_ago_in_words(micropost.created_at) %> ago.
+    <% if current_user?(micropost.user) %>
+      <%= link_to "Delete", micropost, method: :delete,
+                  data: { confirm: "You sure?" },
+                  title: micropost.content %>
+  <% end %>
+  </span></h5>
+
+</div>
+<div class="col-10 col-sm-13 col-lg-12">
+  <hr class="featurette-divider">
+</div>
